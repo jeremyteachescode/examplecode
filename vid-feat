@@ -1,0 +1,3 @@
+feat: Implement HLS adaptive bitrate streaming for video playback
+
+Addresses intermittent buffering and quality degradation reported by users during talent profile video playback. This commit introduces HLS for more robust streaming across varying network conditions. Further testing required.
