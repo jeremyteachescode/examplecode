@@ -1,0 +1,16 @@
+[PR #1234] Refactor: Optimize Video Transcoding API for HLS Compatibility
+
+**Description:**
+This pull request updates the backend video processing API to efficiently handle HLS segment generation and manifest creation. It includes:
+- New endpoint `/api/v1/videos/{id}/hls` for HLS manifest.
+- Optimized FFmpeg integration for faster transcoding.
+- Error handling improvements for failed segment generation.
+
+**Related Issues:**
+- Closes JIRA-5678: Talent Profile Videos Not Playing Consistently
+- Addresses JIRA-5679: Investigate Video Playback Performance
+
+**Testing Notes:**
+- Local tests confirm HLS manifest generation for various video formats.
+- Integration tests with frontend are pending deployment.
+- Performance benchmarks show 20% improvement in transcoding time.
